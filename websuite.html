@@ -1,25 +1,61 @@
  <!DOCTYPE html>
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-p.italic {
-  font-style: italic;
+body, html {
+  height: 100%;
+  margin: 0;
 }
-div {
-  height: 25px;
-  width: 500px;
-  background-color: pink;
-}
-p.inset {border-style: inset;}
 
+
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("arisu.png");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: pink;
+}
+
+.hero-text button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+}
+
+.hero-text button:hover {
+  background-color: #555;
+  color: white;
+}
 </style>
-<title>Hello!</title>
+<title>welcome to arisus websuite!</title>
 </head>
 <body>
-<h1>Hello welcome to our developing websuite</h1>
+<div class="bg"></div>
+<div class="hero-image">
+  <div class="hero-text">
+    <h1 style="font-size:50px">come join our group</h1>
+     <button onclick="window.location.href = 'https://discord.gg/RSkAABb';">join!</button>
+  </div>
+</div>
 <div>
 <p class="italic">
-<p class="inset">To our community members are proud to present our new websuite!</p></div>
+
 
 </body>
 </html> 
